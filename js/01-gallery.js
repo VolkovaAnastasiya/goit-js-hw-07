@@ -37,5 +37,3 @@ const newImgArray = ({preview, original, description}) => {
 
 const imageMarkup = galleryItems.map(newImgArray).join('');
 galleryRef.insertAdjacentHTML('beforeend', imageMarkup);
-
-console.log(imageMarkup);
