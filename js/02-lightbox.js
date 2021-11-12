@@ -7,12 +7,12 @@ const galleryRef = document.querySelector('.gallery');
 
 const newImgArray = ({preview, original, description}) => {
   return `
-  <a class="gallery__link" href="${original}">
+  <li><a class="gallery__link" href="${original}">
     <img
       class="gallery__image"
       src = "${preview}"
       alt = "${description}"/>
-  </a>
+  </a></li>
   `;
 }
 
